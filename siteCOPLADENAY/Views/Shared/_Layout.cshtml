@@ -1,40 +1,134 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    <link rel="icon" type="image/x-icon" href="~/Content/imgs/favicon.ico" />
+    <title>Comité de Planeación para el Desarrollo del Estado de Nayarit - Gobierno del Estado de Nayarit</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Nombre de aplicación", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+    <!--linea superior-->
+    <nav class="text-xl-center">
+        <div style="background-color:dimgrey; width: 100%; background-color: #20364c; height: 30px;">
+        </div>
+    </nav>
+    <!--banner de copladenay-->
+    <div class="row">
+        <div class="container" id="div-img-container" style="">
+            <div class="row justify-content-center">
+                <div class="col-12 px-0">
+                    <a href="@Url.Action("Index", "Home")">
+                        <img src="~/Content/imgs/banner_lat2.png" style="width:100%; " />
+                    </a>
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
-                </ul>
-            </div>
+        </div>
+        <!--Menú-->
+        <div class="container" style="padding-left: 0%;padding-right: 0%;">
+            <nav class="text-xl-center">
+                <div>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light justify">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto ml-auto mx-auto">
+                                <a class="navbar-brand" href="@Url.Action("Index", "Home")">Inicio</a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        &nbsp;&nbsp;&nbsp;Conócenos&nbsp;&nbsp;&nbsp;
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="@Url.Action()">Antecedentes</a>
+                                        <a class="dropdown-item" href="@Url.Action()">Misión y Visión</a>
+                                        <a class="dropdown-item" href="@Url.Action()">Objetivo</a>
+                                        <a class="dropdown-item" href="@Url.Action()">Organigrama General</a>
+                                        <a class="dropdown-item" href="@Url.Action()">Directorio</a>
+                                        <a class="dropdown-item" href="@Url.Action()">Funciones</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        &nbsp;&nbsp;&nbsp;Sesiones&nbsp;&nbsp;&nbsp;
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Asamblea General</a>
+                                        <a class="dropdown-item" href="#">Comisión permanente</a>
+                                        <a class="dropdown-item" href="#">Subcomités</a>
+                                        <a class="dropdown-item" href="#">Coordinadores</a>
+                                        <a class="dropdown-item" href="#">Participantes (Padrón de Beneficiarios)</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        &nbsp;&nbsp;&nbsp;Planeación&nbsp;&nbsp;&nbsp;
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Sistema Estatal de Planeación</a>
+                                        <a class="dropdown-item" href="#">Plan Nacional de Desarrollo</a>
+                                        <a class="dropdown-item" href="#">Planes Municipales de Desarrollo</a>
+                                        <a class="dropdown-item" href="#">Sistema de Indicadores</a>
+                                        <a class="dropdown-item" href="#">Cartera de Proyectos</a>
+                                        <a class="dropdown-item" href="#">Reforme General de la Gestión Pública</a>
+                                        <a class="dropdown-item" href="#">Actas de Comité de Información</a>
+                                        <a class="dropdown-item" href="#">Transparencia</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        &nbsp;&nbsp;&nbsp;PED 2011 - 2017&nbsp;&nbsp;&nbsp;
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Plan Estatal de Desarrollo</a>
+                                        <a class="dropdown-item" href="#">Plan Estatal de Desarrollo (Versión Impresa)</a>
+                                        <a class="dropdown-item" href="#">Plan Estatal de Desarrollo (Periódico Oficial</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </nav>
         </div>
     </div>
     <div class="container body-content">
-        @RenderBody()
+        <div class="row">
+            <!--RenderBody manda llamar el contenido-->
+            <div class="col-sm">
+                @RenderBody()
+            </div>
+            <!--Publicidad lateral-->
+            <div class="col-sm-3">
+                <!--Redes sociales-->
+                <div id="redes">
+                    <!--Youtube-->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hoCWP08XqYQ?rel=0" allowfullscreen></iframe>
+                    </div>
+                    <div id="fb-root"></div>
+                    <br />
+                    <!--Facebook-->
+                    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.2"></script>
+                    <div class="fb-page" data-href="https://www.facebook.com/spppnayarit/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/spppnayarit/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/spppnayarit/">Secretaría de Planeación, Programación y Presupuesto de Nayarit</a></blockquote>
+                    </div>
+                </div>
+
+            </div>
+        </div>
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
-        </footer>
     </div>
+    <!--Pie de pagina #20364c-->
+    <nav style="background-color:#303030; width:100vw; position: fixed;bottom: 0; ">
+        <p class="text-white text-center">
+            &copy; @DateTime.Now.Year - COMITÉ DE PLANEACIÓN PARA EL DESARROLLO DEL ESTADO DE NAYARIT
+            AV. INSURGENTES ESQ. REY NAYAR S/N COL. BURÓCRATAS FED. C.P. 63156. TEPIC, NAYARIT. TEL. (311) 2 11 9200. FAX 213 5471
+        </p>
+    </nav>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
