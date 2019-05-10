@@ -128,7 +128,11 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ConocenosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PlaneacionController.cs" />
+    <Compile Include="Controllers\SesionesController.cs" />
+    <Compile Include="Controllers\TransparenciaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -141,10 +145,27 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\imgs\bannerHEAD_1200x280.jpg" />
-    <Content Include="Content\imgs\banner_lat2.png" />
-    <Content Include="Content\imgs\banner_siegen2.jpg" />
-    <Content Include="Content\imgs\favicon.ico" />
+    <Content Include="Content\Files\Asamblea General\botones_ASAMBLEA-11-24-Marzo.jpg" />
+    <Content Include="Content\Files\Asamblea General\botones_ASAMBLEA-12_10-Diciembre.jpg" />
+    <Content Include="Content\Files\Asamblea General\botones_ASAMBLEA-13_09-Diciembre.jpg" />
+    <Content Include="Content\Files\Asamblea General\botones_ASAMBLEA-14-09-Diciembre.jpg" />
+    <Content Include="Content\Files\Asamblea General\botones_ASAMBLEA-14-31-Enero.jpg" />
+    <Content Include="Content\Files\Asamblea General\botones_ASAMBLEA-15_08-Diciembre.jpg" />
+    <Content Include="Content\Files\Asamblea General\botones_ASAMBLEA-15_20-Marzo.jpg" />
+    <Content Include="Content\Files\Asamblea General\botones_ASAMBLEA-16_14-Marzo.jpg" />
+    <Content Include="Content\Files\Asamblea General\botones_ASAMBLEA-25-octubre.jpg" />
+    <Content Include="Content\Files\Asamblea General\botones_ASAMBLEA-27-Febrero.jpg" />
+    <Content Include="Content\Files\Directorio\curriculums\FC_acrobat-02.png" />
+    <Content Include="Content\Files\Directorio\imagenes_directorio\Dra. Reina Rosales Andrade_2.jpg" />
+    <Content Include="Content\Files\Directorio\imagenes_directorio\Lic. David Guerrero Castellon.jpg" />
+    <Content Include="Content\Files\Directorio\imagenes_directorio\Lic. Juan Pablo Lopez Diaz.jpg" />
+    <Content Include="Content\Files\Directorio\imagenes_directorio\MDOH Mayra Janet Morales Rojo.jpg" />
+    <Content Include="Content\Files\Directorio\imagenes_directorio\PARA CURRICULA.jpg" />
+    <Content Include="Content\Files\imgs\bannerHEAD_1200x280.jpg" />
+    <Content Include="Content\Files\imgs\banner_lat2.png" />
+    <Content Include="Content\Files\imgs\banner_siegen2.jpg" />
+    <Content Include="Content\Files\imgs\favicon.ico" />
+    <Content Include="Content\Files\organigramas\organigrama_copladenay_7-02-19.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -170,6 +191,21 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Content\Files\Asamblea General\Acta Asamblea Instalacion General 2011-2017.pdf" />
+    <Content Include="Content\Files\Asamblea General\ACTA DE LA PRIMERA ASAMBLEA GENERAL ORDINARIA DE 2012.pdf" />
+    <Content Include="Content\Files\Asamblea General\ACTA DE LA PRIMERA ASAMBLEA GENERAL ORDINARIA DE 2013.pdf" />
+    <Content Include="Content\Files\Asamblea General\ACTA DE LA PRIMERA ASAMBLEA GENERAL ORDINARIA DE 2014.pdf" />
+    <Content Include="Content\Files\Asamblea General\ACTA DE LA PRIMERA ASAMBLEA GENERAL ORDINARIA DE 2015.pdf" />
+    <Content Include="Content\Files\Asamblea General\ACTA DE LA PRIMERA ASAMBLEA GENERAL ORDINARIA DE 2016.pdf" />
+    <Content Include="Content\Files\Asamblea General\ACTA DE LA SEGUNDA ASAMBLEA GENERAL ORDINARIA DE 2012.pdf" />
+    <Content Include="Content\Files\Asamblea General\ACTA DE LA SEGUNDA ASAMBLEA GENERAL ORDINARIA DE 2013.pdf" />
+    <Content Include="Content\Files\Asamblea General\ACTA DE LA SEGUNDA ASAMBLEA GENERAL ORDINARIA DE 2014.pdf" />
+    <Content Include="Content\Files\Asamblea General\ACTA DE LA SEGUNDA ASAMBLEA GENERAL ORDINARIA DE 2015.pdf" />
+    <Content Include="Content\Files\Directorio\curriculums\1. Ficha curricular COPLADE MDOH  Mayra Morales.pdf" />
+    <Content Include="Content\Files\Directorio\curriculums\1. FICHA CURRICULAR ING. OMAR RAMIREZ dir. supervision.pdf" />
+    <Content Include="Content\Files\Directorio\curriculums\FICHA_CURRICULAR_DAVID_GUERRERO_CASTELLoN_COORDINADOR_GRAL.pdf" />
+    <Content Include="Content\Files\Directorio\curriculums\FICHA_CURRICULAR_JUAN_PABLO_coplade.pdf" />
+    <Content Include="Content\Files\Directorio\curriculums\FICHA_CURRICULAR_ReinaRosales_coplade.pdf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -212,10 +248,22 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Conocenos\Antecedentes.cshtml" />
+    <Content Include="Views\Conocenos\Mision_Vision.cshtml" />
+    <Content Include="Views\Conocenos\Objetivo.cshtml" />
+    <Content Include="Views\Conocenos\Organigrama.cshtml" />
+    <Content Include="Views\Conocenos\Directorio.cshtml" />
+    <Content Include="Views\Conocenos\Funciones.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Files\Comisiones permanentes\" />
+    <Folder Include="Content\Files\Participantes %28Padrón de beneficiarios%29\" />
+    <Folder Include="Content\Files\subcomites\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Planeacion\" />
+    <Folder Include="Views\Sesiones\" />
+    <Folder Include="Views\Transparencia\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
