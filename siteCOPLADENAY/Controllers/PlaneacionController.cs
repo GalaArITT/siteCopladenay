@@ -9,81 +9,55 @@ namespace siteCOPLADENAY.Controllers
     public class PlaneacionController : Controller
     {
         // GET: Planeacion
-        public ActionResult Index()
+        public ActionResult SistemaEstatalPlaneacion()
+        {
+            return View();
+        }
+        public ActionResult PlanesMunicipales()
+        {
+            return View();
+        }
+        public ActionResult SistemaIndicadores()
+        {
+            return View();
+        }
+        public ActionResult CarteraProyectos()
+        {
+            return View();
+        }
+        public ActionResult ActasComite()
+        {
+            return View();
+        }
+        public ActionResult ActasComite2014()
+        {
+            return View();
+        }
+        public ActionResult ActasComite2015()
+        {
+            return View();
+        }
+        public ActionResult ActasComite2016()
+        {
+            return View();
+        }
+        public ActionResult ActasComite2017()
+        {
+            return View();
+        }
+        public ActionResult ActasComite2018()
+        {
+            return View();
+        }
+        public ActionResult ActasComite2019()
         {
             return View();
         }
 
-        // GET: Planeacion/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Transparencia_Planeacion()
         {
             return View();
         }
 
-        // GET: Planeacion/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Planeacion/Create
-        [HttpPost]
-        public ActionResult Create(FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: Planeacion/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: Planeacion/Edit/5
-        [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add update logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: Planeacion/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: Planeacion/Delete/5
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
     }
 }

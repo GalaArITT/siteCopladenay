@@ -56,11 +56,11 @@
                                         &nbsp;&nbsp;&nbsp;Sesiones&nbsp;&nbsp;&nbsp;
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Asamblea General</a>
-                                        <a class="dropdown-item" href="#">Comisión permanente</a>
-                                        <a class="dropdown-item" href="#">Subcomités</a>
-                                        <a class="dropdown-item" href="#">Coordinadores</a>
-                                        <a class="dropdown-item" href="#">Participantes (Padrón de Beneficiarios)</a>
+                                        <a class="dropdown-item" href="@Url.Action("Asamblea_General","Sesiones")">Asamblea General</a>
+                                        <a class="dropdown-item" href="@Url.Action("Comision_Permanente","Sesiones")">Comisión permanente</a>
+                                        <a class="dropdown-item" href="@Url.Action("Subcomite","Sesiones")">Subcomités</a>
+                                        <a class="dropdown-item" href="@Url.Action("Coordinadores","Sesiones")">Coordinadores</a>
+                                        <a class="dropdown-item" href="~/Content/Files/Participantes (Padrón de beneficiarios)/PARTICIPANTES.xlsx">Participantes (Padrón de Beneficiarios)</a>
                                     </div>
                                 </li>
                                 <li class="nav-item dropdown">
@@ -68,14 +68,14 @@
                                         &nbsp;&nbsp;&nbsp;Planeación&nbsp;&nbsp;&nbsp;
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Sistema Estatal de Planeación</a>
-                                        <a class="dropdown-item" href="#">Plan Nacional de Desarrollo</a>
-                                        <a class="dropdown-item" href="#">Planes Municipales de Desarrollo</a>
-                                        <a class="dropdown-item" href="#">Sistema de Indicadores</a>
-                                        <a class="dropdown-item" href="#">Cartera de Proyectos</a>
-                                        <a class="dropdown-item" href="#">Reforme General de la Gestión Pública</a>
-                                        <a class="dropdown-item" href="#">Actas de Comité de Información</a>
-                                        <a class="dropdown-item" href="#">Transparencia</a>
+                                        <a class="dropdown-item" href="@Url.Action("SistemaEstatalPlaneacion","Planeacion")">Sistema Estatal de Planeación</a>
+                                        <a class="dropdown-item" href="http://pnd.gob.mx/">Plan Nacional de Desarrollo</a>
+                                        <a class="dropdown-item" href="@Url.Action("PlanesMunicipales","Planeacion")">Planes Municipales de Desarrollo</a>
+                                        <a class="dropdown-item" href="@Url.Action("SistemaIndicadores","Planeacion")">Sistema de Indicadores</a>
+                                        <a class="dropdown-item" href="@Url.Action("CarteraProyectos","Planeacion")">Cartera de Proyectos</a>
+                                        <a class="dropdown-item" href="~/Content/Files/Planeacion/ReformaGerencialGestionPublica/PBR.zip")">Reforma General de la Gestión Pública</a>
+                                        <a class="dropdown-item" href="@Url.Action("ActasComite","Planeacion")">Actas de Comité de Información</a>
+                                        <a class="dropdown-item" href="@Url.Action("Transparencia_Planeacion","Planeacion")">Transparencia</a>
                                     </div>
                                 </li>
                                 <li class="nav-item dropdown">
@@ -83,9 +83,8 @@
                                         &nbsp;&nbsp;&nbsp;Transparencia&nbsp;&nbsp;&nbsp;
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Plan Estatal de Desarrollo</a>
-                                        <a class="dropdown-item" href="#">Plan Estatal de Desarrollo (Versión Impresa)</a>
-                                        <a class="dropdown-item" href="#">Plan Estatal de Desarrollo (Periódico Oficial</a>
+                                        <a class="dropdown-item" href="@Url.Action("SesionesSubcomite","Transparencia")">Sesiones de subcomítés</a>
+                                        <a class="dropdown-item" href="@Url.Action("ArmonizacionContable","Transparencia")">Armonización Contable</a>
                                     </div>
                                 </li>
                                 <li class="nav-item dropdown">
@@ -115,10 +114,6 @@
             <div class="col-sm-3">
                 <!--Redes sociales-->
                 <div id="redes">
-                    <!--Youtube-->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hoCWP08XqYQ?rel=0" allowfullscreen></iframe>
-                    </div>
                     <div id="fb-root"></div>
                     <br />
                     <!--Facebook-->

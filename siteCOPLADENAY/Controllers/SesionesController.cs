@@ -9,81 +9,42 @@ namespace siteCOPLADENAY.Controllers
     public class SesionesController : Controller
     {
         // GET: Sesiones
-        public ActionResult Index()
+        public ActionResult Asamblea_General()
+        {
+            return View();
+        }
+        public ActionResult Comision_Permanente()
+        {
+            return View();
+        }
+        public ActionResult Subcomite()
+        {
+            return View();
+        }
+        public ActionResult Coordinadores()
+        {
+            return View();
+        }
+        public ActionResult CalendarioSesiones13()
+        {
+            return View();
+        }
+        public ActionResult CalendarioSesiones14()
+        {
+            return View();
+        }
+        public ActionResult CalendarioSesiones15()
+        {
+            return View();
+        }
+        public ActionResult CalendarioSesiones16()
+        {
+            return View();
+        }
+        public ActionResult CalendarioSesiones17()
         {
             return View();
         }
 
-        // GET: Sesiones/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // GET: Sesiones/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Sesiones/Create
-        [HttpPost]
-        public ActionResult Create(FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: Sesiones/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: Sesiones/Edit/5
-        [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add update logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: Sesiones/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: Sesiones/Delete/5
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
     }
 }
